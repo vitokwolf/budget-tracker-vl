@@ -20,3 +20,10 @@ request.onsuccess = function (e) {
 request.onerror = function (e) {
   console.log(e.target.errorCode)
 }
+
+// function to store data when offline
+const saveRecord = function (record) {
+  const transaction = db.transaction(['pending'], 'readwrite')
+  const store = transaction.objectStore('pending')
+  store.add(record)
+}
