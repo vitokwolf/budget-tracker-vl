@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "lite-server": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "mongoose": "^6.0.5",
-    "morgan": "^1.10.0"
+    "mongoose": "^5.5.15",
+    "morgan": "^1.9.1"
   }
 }
