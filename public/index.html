@@ -67,7 +67,7 @@
   </body>
   <!-- function to register service worker -->
   <script>
-    ;(function () {
+    ;(() => {
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker
           .register('./service-worker.js')
