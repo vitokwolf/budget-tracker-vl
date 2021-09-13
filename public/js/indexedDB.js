@@ -10,7 +10,13 @@ request.onupgradeneeded = function (e) {
 //upon a successful creation
 request.onsuccess = function (e) {
   db = e.target.result
+  //   check if online, and if true, update database
   if (navigator.online) {
     uploadPending()
   }
+}
+
+// error handling
+request.onerror = function (e) {
+  console.log(e.target.errorCode)
 }
